@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Card */
+.container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #2C3E50;
+}
+
+/* Form Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #5563DE;
+    box-shadow: 0 0 6px rgba(85, 99, 222, 0.3);
+}
+
+/* Buttons */
+button, .history-btn {
+    display: inline-block;
+    background: #5563DE;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .history-btn:hover {
+    background: #3E4BC3;
+    transform: translateY(-2px);
+}
+
+/* Result Box */
+.result {
+    margin-top: 20px;
+    background: #F4F6FB;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #E0E4F1;
+    font-size: 16px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+}
